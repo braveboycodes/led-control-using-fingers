@@ -142,22 +142,26 @@ Check Output: The LEDs should light up based on the number of fingers detected. 
 
 ⚠️ Common Errors and Troubleshooting
 Error: AttributeError: 'NoneType' object has no attribute 'shape'
+
 Cause: This error occurs if the webcam is not properly initialized or if it cannot read frames.
+
 Solution: Ensure that your webcam is connected and functioning. Verify that the cap = cv2.VideoCapture(0) line uses the correct camera index.
+
 Error: ConnectionRefusedError
+
 Cause: This error may occur if there’s an issue with the communication between the Python script and the Arduino board.
+
 Solution: Check the COM port specified ('COM5' in the example) and ensure it matches the port your Arduino is connected to. Update the comport variable if necessary.
+
 Error: ModuleNotFoundError
+
 Cause: This error happens if required libraries are not installed.
+
 Solution: Install the missing libraries using pip, as shown in the setup section.
 🎉 Conclusion
+
 This project demonstrates a simple way to control LEDs using hand gestures. Modify the code and wiring to suit your needs and explore additional features like adding more LEDs or improving hand detection accuracy.
 
 Feel free to contribute improvements or report issues.
 
-Created by Brave Boy Codes 👨‍💻
-
-css
-Copy code
-
-This Markdown file now includes emojis to make it more engaging and visually appealing.
+Created by Brave Boy Codes 👨‍💻.
